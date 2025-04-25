@@ -390,3 +390,141 @@ p {
   text-align: center;
   color: #aaa;
 }
+/* Responsive: Tablets and below */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    padding: 15px 30px;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
+  }
+
+  .home .left h1 {
+    font-size: 2.5rem;
+  }
+
+  .home .left p {
+    font-size: 1.1rem;
+  }
+
+  .slide .first,
+  .slide .second,
+  .card1,
+  .card2 {
+    width: 80%;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+
+  .home {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .home .left h1 {
+    font-size: 2rem;
+  }
+
+  .home .left h2 {
+    font-size: 1.4rem;
+  }
+
+  .home .left p {
+    font-size: 1rem;
+  }
+
+  .slide,
+  .cards,
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container .card,
+  .slide .first,
+  .slide .second,
+  .card1,
+  .card2 {
+    width: 90%;
+  }
+
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+
+  .contact-container p,
+  .email-link {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive: Extra small screens */
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home .left h1 {
+    font-size: 1.8rem;
+  }
+
+  .home .left p {
+    font-size: 0.95rem;
+  }
+
+  .card-container .card {
+    font-size: 0.9rem;
+  }
+
+  .live-button {
+    padding: 8px 18px;
+    font-size: 0.95rem;
+  }
+
+  .footer-title {
+    font-size: 22px;
+  }
+
+  .footer-tagline {
+    font-size: 12px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
